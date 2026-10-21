@@ -1,0 +1,130 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--white);
+  color: var(--text-primary);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--ice);
+  outline-offset: 3px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Temporary home page — used to test our setup */
+
+.app-home {
+  display: grid;
+  min-height: 100vh;
+  padding: 32px 24px;
+  place-items: center;
+  background:
+    radial-gradient(ellipse at top right, rgba(179, 205, 224, 0.45), transparent 45%),
+    linear-gradient(145deg, #FFFFFF 20%, #EDF3F8 100%);
+}
+
+.app-home__content {
+  width: 100%;
+  max-width: 760px;
+  text-align: center;
+}
+
+.app-home__eyebrow {
+  margin-bottom: 20px;
+  color: var(--indigo);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.app-home h1 {
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(38px, 7vw, 68px);
+  font-weight: 800;
+  letter-spacing: -2.5px;
+  line-height: 1.1;
+}
+
+.app-home h1 span {
+  color: var(--indigo);
+}
+
+.app-home__description {
+  margin: 24px auto 32px;
+  color: var(--text-secondary);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.app-home__button {
+  padding: 15px 28px;
+  border: 0;
+  border-radius: var(--radius-md);
+  background: var(--navy);
+  color: var(--white);
+  font-weight: 700;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.app-home__button:hover {
+  transform: translateY(-2px);
+  background: var(--indigo);
+}
+
+.not-found {
+  padding: 40px 24px;
+  color: var(--navy);
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  :root {
+    --page-padding: 16px;
+  }
+
+  .app-home h1 {
+    letter-spacing: -1.5px;
+  }
+
+  .app-home__description {
+    font-size: 15px;
+  }
+}

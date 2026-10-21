@@ -1,0 +1,50 @@
+
+:root {
+  /* AdaptIQ — Starry Night palette */
+  --navy: #0C1446;
+  --navy-light: #17265E;
+  --indigo: #2B5C92;
+  --indigo-hover: #204875;
+  --ice: #B3CDE0;
+  --ice-light: #EDF3F8;
+
+  /* Text */
+  --text-primary: #142B54;
+  --text-secondary: #536681;
+  --text-muted: #75859B;
+
+  /* Surfaces */
+  --white: #FFFFFF;
+  --surface: #FFFFFF;
+  --surface-soft: #F6F8FB;
+  --surface-blue: #EDF3F8;
+
+  /* Borders and shadows */
+  --border: #E1E8F0;
+  --border-strong: #CBD7E4;
+  --shadow-sm: 0 4px 16px rgba(12, 20, 70, 0.06);
+  --shadow-md: 0 12px 32px rgba(12, 20, 70, 0.10);
+
+  /* Layout */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 30px;
+
+  --container-width: 1200px;
+  --page-padding: 24px;
+
+  /* Typography */
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--text-primary);
+  background: var(--white);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
