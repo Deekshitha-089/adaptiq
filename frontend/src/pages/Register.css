@@ -1,0 +1,311 @@
+
+.register-page {
+  --cream: #E7E7DB;
+  --lavender: #C4B1E5;
+  --yellow: #FFF6A8;
+  --charcoal: #292827;
+  --white: #F7F5EE;
+  --muted: #716F68;
+  --line: #D0CFC4;
+
+  min-height: 100vh;
+  background: var(--white);
+  color: var(--charcoal);
+  font-family: "DM Sans", sans-serif;
+}
+
+.register-page * {
+  box-sizing: border-box;
+}
+
+.register-page a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.register-nav {
+  min-height: 72px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+}
+
+.register-logo {
+  font-family: "Anton", sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.register-logo span {
+  color: #856DAA;
+}
+
+.register-nav p {
+  font-size: 12px;
+}
+
+.register-nav p a {
+  margin-left: 5px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.register-content {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 8%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 60px 7%;
+}
+
+.register-intro {
+  max-width: 520px;
+}
+
+.register-eyebrow {
+  margin: 0 0 18px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.register-intro h1 {
+  margin: 0;
+  font-family: "Anton", sans-serif;
+  font-size: clamp(54px, 6vw, 78px);
+  font-weight: 400;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.register-intro h1 em {
+  color: #856DAA;
+  font-family: "Bodoni Moda", serif;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.register-description {
+  max-width: 390px;
+  margin: 22px 0 30px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.register-image img {
+  display: block;
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+}
+
+.register-form-section {
+  align-self: center;
+  padding: 25px 0;
+}
+
+.register-form-heading {
+  margin-bottom: 25px;
+}
+
+.register-form-heading .register-eyebrow {
+  color: var(--muted);
+}
+
+.register-form-heading h2 {
+  margin: 0 0 9px;
+  font-family: "Anton", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.register-form-heading > p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.register-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.register-field label {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.register-field input {
+  width: 100%;
+  min-height: 46px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: #FFFFFF;
+  color: var(--charcoal);
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.register-field input::placeholder {
+  color: #A09E96;
+}
+
+.register-field input:focus {
+  outline: 2px solid var(--lavender);
+  border-color: #856DAA;
+}
+
+.register-show-password {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  color: var(--muted);
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.register-show-password input {
+  width: 14px;
+  height: 14px;
+  accent-color: #856DAA;
+  cursor: pointer;
+}
+
+.register-message {
+  margin: 0;
+  padding: 12px;
+  border-left: 3px solid #856DAA;
+  background: #F0EAF8;
+  color: #453858;
+  font-size: 12px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.register-submit {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 0 17px;
+  border: 1px solid var(--charcoal);
+  border-radius: 3px;
+  background: var(--yellow);
+  color: var(--charcoal);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.register-submit:hover {
+  background: var(--charcoal);
+  color: var(--white);
+}
+
+.register-terms {
+  margin: 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+.register-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 7%;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.register-footer a {
+  color: var(--charcoal);
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .register-content {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    max-width: 650px;
+    padding: 40px 7%;
+  }
+
+  .register-intro {
+    max-width: 600px;
+  }
+
+  .register-intro h1 {
+    font-size: clamp(52px, 10vw, 72px);
+  }
+
+  .register-image img {
+    height: 280px;
+  }
+
+  .register-form-section {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-nav {
+    min-height: 64px;
+    padding: 0 5%;
+  }
+
+  .register-logo {
+    font-size: 24px;
+  }
+
+  .register-nav p {
+    font-size: 10px;
+  }
+
+  .register-content {
+    padding: 35px 6%;
+  }
+
+  .register-intro h1 {
+    font-size: 52px;
+  }
+
+  .register-description {
+    font-size: 12px;
+  }
+
+  .register-image img {
+    height: 230px;
+  }
+
+  .register-form-heading h2 {
+    font-size: 30px;
+  }
+
+  .register-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px 6%;
+  }
+}
